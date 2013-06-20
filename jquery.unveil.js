@@ -61,12 +61,6 @@
       images = images.not(loaded);
     }
 
-    function veil() {
-      source = this.getAttribute(attrib);
-      source = source || this.getAttribute("src");
-      if (source) this.setAttribute("data-src", source);
-    }
-
     $w.scroll(unveil);
     $w.resize(unveil);
 
