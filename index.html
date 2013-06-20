@@ -78,6 +78,15 @@
         margin-left: 20px;
     }
 
+    .big {
+        width: 3000px;
+        text-align: right;
+    }
+
+    .big img {
+        margin: auto 0 auto auto;
+    }
+
     </style>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -87,6 +96,8 @@
     <script>
     $(function() {
         $("li img").unveil(300);
+        $(".vertical img").unveil(300);
+        $(".horizontal img").unveil(300, { horizontal : true });
     });
     </script>
 
@@ -147,9 +158,12 @@
         <li><img src="img/loader.gif" data-src="img/johanna-basford-wallpaper-800x500.jpg" data-src-retina="img/johanna-basford-wallpaper-1280x800.jpg" /></li>
         <li><img src="img/loader.gif" data-src="img/Jude_Landry_Wallpaper_800x500.jpg" data-src-retina="img/Jude_Landry_Wallpaper_1280x800.jpg" /></li>
         <li><img src="img/loader.gif" data-src="img/julieta-felix-wallpaper-800x500.jpg" data-src-retina="img/julieta-felix-wallpaper-1280x800.jpg" /></li>
-        <li><img src="img/loader.gif" data-src="img/Timothy-J-Reynolds-wallpaper-800x500.jpg" data-src-retina="img/Timothy-J-Reynolds-wallpaper-1200x800.jpg" /></li>
-        <li><img src="img/loader.gif" data-src="img/haik-avanian-wallpaper-800x500.jpg" data-src-retina="img/haik-avanian-wallpaper-1280x800.jpg" /></li>
     </ul>
+
+    <div class="big">
+        <div class="vertical"><img src="img/loader.gif" data-src="img/haik-avanian-wallpaper-800x500.jpg" data-src-retina="img/haik-avanian-wallpaper-1280x800.jpg" /></div>
+        <div class="horizontal"><img src="img/loader.gif" data-src="img/Timothy-J-Reynolds-wallpaper-800x500.jpg" data-src-retina="img/Timothy-J-Reynolds-wallpaper-1200x800.jpg" /></div>
+    </div>
 
     <h2>Download</h2>
     <p>Download the script from the project page on <a href="https://github.com/luis-almeida/unveil">GitHub</a>.</p>
